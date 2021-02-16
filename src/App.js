@@ -20,7 +20,7 @@ const App = () => {
   // This state is the source of truth for the data inside the app. You won't be needing dummyData anymore.
   // To make the search bar work (which is stretch) we'd need another state to hold the search term.
   const [search, setSearch] = useState("")
-  console.log(posts)
+  // console.log(posts)
 
   const likePost = postId => {
     /*
@@ -40,7 +40,7 @@ const App = () => {
     // return userID === postId ? {...posts, postLikes:posts.like + 1} : {postLikes}
 
     setPosts(posts.map(post => {
-      return post.id === postId? {...post, likes:post.likes + 1} : post
+      return post.id === postId ? {...post, likes:post.likes + 1} : post
     }))
 
   };
